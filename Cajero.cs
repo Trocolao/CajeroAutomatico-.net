@@ -1,164 +1,56 @@
 namespace _net{
     public class Cajero{
         
-     int unidades500;
-    int unidades200;
-    int unidades100;
-    int unidades50;
-    int unidades20;
-    int unidades10;
-    int unidades5;
-    int unidades2;
-    int unidades1;
-    int unidades05;
-    int unidades02;
-    int unidades01;
-    int unidades005;
-    int unidades002;
-    int unidades001;
-
+        public Cajero(int unidades500, int unidades100, int unidades20, int unidades5, int unidades1, int unidades02, int unidades005, int unidades001) 
+        {
+            this.Unidades500 = unidades500;
+    this.Unidades100 = unidades100;
+    this.Unidades20 = unidades20;
+    this.Unidades5 = unidades5;
+    this.Unidades1 = unidades1;
+    this.Unidades02 = unidades02;
+    this.Unidades005 = unidades005;
+    this.Unidades001 = unidades001;
+   
+        }
+            public int Unidades500 { get; set; }
+    public int Unidades200 { get; set; }
+    public int Unidades100 { get; set; }
+    public int Unidades50 { get; set; }
+    public int Unidades20 { get; set; }
+    public int Unidades10 { get; set; }
+    public int Unidades5 { get; set; }
+    public int Unidades2 { get; set; }
+    public int Unidades1 { get; set; }
+    public int Unidades05 { get; set; }
+    public int Unidades02 { get; set; }
+    public int Unidades01 { get; set; }
+    public int Unidades005 { get; set; }
+    public int Unidades002 { get; set; }
+    public int Unidades001 { get; set; }
     public Cajero(int unidades500, int unidades200, int unidades100, int unidades50,
                   int unidades20, int unidades10, int unidades5,
-                  int unidades2, int unidades1,int unidades05, int unidades02,
+                  int unidades2, int unidades1,int U, int unidades02,
                   int unidades01, int unidades005, int unidades002, int unidades001) {
-        this.unidades500 = unidades500;
-        this.unidades200 = unidades200;
-        this.unidades100 = unidades100;
-        this.unidades50 = unidades50;
-        this.unidades20 = unidades20;
-        this.unidades10 = unidades10;
-        this.unidades5 = unidades5;
-        this.unidades2 = unidades2;
-        this.unidades1 = unidades1;
-        this.unidades05 = unidades05;
-        this.unidades02 = unidades02;
-        this.unidades01 = unidades01;
-        this.unidades005 = unidades005;
-        this.unidades002 = unidades002;
-        this.unidades001 = unidades001;
+        Unidades500 = unidades500;
+        Unidades200 = unidades200;
+        Unidades100 = unidades100;
+        Unidades50 = unidades50;
+        Unidades20 = unidades20;
+        Unidades10 = unidades10;
+        Unidades5 = unidades5;
+        Unidades2 = unidades2;
+        Unidades1 = unidades1;
+        Unidades05 = U;
+        Unidades02 = unidades02;
+        Unidades01 = unidades01;
+        Unidades005 = unidades005;
+        Unidades002 = unidades002;
+        Unidades001 = unidades001;
     }
 
 
-    public  int getUnidades500() {
-        return unidades500;
-    }
-
-    public void setUnidades500(int unidades500) {
-        unidades500 = unidades500;
-    }
-
-    public int getUnidades200() {
-        return unidades200;
-    }
-
-    public void setUnidades200(int unidades200) {
-        this.unidades200 = unidades200;
-    }
-
-    public int getUnidades100() {
-        return unidades100;
-    }
-
-    public void setUnidades100(int unidades100) {
-        this.unidades100 = unidades100;
-    }
-
-    public int getUnidades50() {
-        return unidades50;
-    }
-
-    public void setUnidades50(int unidades50) {
-        this.unidades50 = unidades50;
-    }
-
-    public int getUnidades20() {
-        return unidades20;
-    }
-
-    public void setUnidades20(int unidades20) {
-        this.unidades20 = unidades20;
-    }
-
-    public int getUnidades10() {
-        return unidades10;
-    }
-
-    public void setUnidades10(int unidades10) {
-        this.unidades10 = unidades10;
-    }
-
-    public int getUnidades5() {
-        return unidades5;
-    }
-
-    public void setUnidades5(int unidades5) {
-        this.unidades5 = unidades5;
-    }
-
-    public int getUnidades2() {
-        return unidades2;
-    }
-
-    public void setUnidades2(int unidades2) {
-        this.unidades2 = unidades2;
-    }
-
-    public int getUnidades1() {
-        return unidades1;
-    }
-
-    public void setUnidades1(int unidades1) {
-        this.unidades1 = unidades1;
-    }
-
-    public int getUnidades05() {
-        return unidades05;
-    }
-
-    public void setUnidades05(int unidades05) {
-        this.unidades05 = unidades05;
-    }
-
-    public int getUnidades02() {
-        return unidades02;
-    }
-
-    public void setUnidades02(int unidades02) {
-        this.unidades02 = unidades02;
-    }
-
-    public int getUnidades01() {
-        return unidades01;
-    }
-
-    public void setUnidades01(int unidades01) {
-        this.unidades01 = unidades01;
-    }
-
-    public int getUnidades005() {
-        return unidades005;
-    }
-
-    public void setUnidades005(int unidades005) {
-        this.unidades005 = unidades005;
-    }
-
-    public int getUnidades002() {
-        return unidades002;
-    }
-
-    public void setUnidades002(int unidades002) {
-        this.unidades002 = unidades002;
-    }
-
-    public int getUnidades001() {
-        return unidades001;
-    }
-
-    public void setUnidades001(int unidades001) {
-        this.unidades001 = unidades001;
-    }
-
+   
     public decimal _dinero;
     public decimal _dinero1;
     Billete bill500=new Billete(500);
@@ -185,314 +77,333 @@ namespace _net{
     }
 
     public void getDineroCajero() {
-        _dinero=getUnidades500()*bill500.getValor()+getUnidades200()*bill200.getValor()
-                +getUnidades100()*bill100.getValor()+getUnidades50()*bill50.getValor()+
-                getUnidades20()*bill20.getValor()+getUnidades10()*bill10.getValor()
-                +getUnidades5()*bill5.getValor()+getUnidades2()*mon2e.getValor()+getUnidades1()*mon1e.getValor()+
-        getUnidades05()*mon50cen.getValor()+getUnidades02()*mon20cen.getValor()
-                +getUnidades01()*mon10cen.getValor()+getUnidades005()*mon5cen.getValor()+
-                getUnidades002()*mon2cen.getValor()+getUnidades001()*mon1cen.getValor();
+        _dinero=Unidades500*bill500.Valor+Unidades200*bill200.Valor
+                +Unidades100*bill100.Valor+Unidades50*bill50.Valor+
+                Unidades20*bill20.Valor+Unidades10*bill10.Valor
+                +Unidades5*bill5.Valor+Unidades2*mon2e.Valor+Unidades1*mon1e.Valor+
+        Unidades05*mon50cen.Valor+Unidades02*mon20cen.Valor
+                +Unidades01*mon10cen.Valor+Unidades005*mon5cen.Valor+
+                Unidades002*mon2cen.Valor+Unidades001*mon1cen.Valor;
     }
     public decimal getDineroDevuelveCajero(){
-        _dinero1=getBilletes500()*bill500.getValor()+getBilletes200()*bill200.getValor()
-                +getBilletes100()*bill100.getValor()+getBilletes50()*bill50.getValor()+
-                getBilletes20()*bill20.getValor()+getBilletes10()*bill10.getValor()
-                +getBilletes5()*bill5.getValor()+getMonedas2()*mon2e.getValor()+getMonedas1()*mon1e.getValor()+
-                getCen50()*mon50cen.getValor()+getCen20()*mon20cen.getValor()
-                +getCen10()*mon10cen.getValor()+getCen5()*mon5cen.getValor()+
-                getCen2()*mon2cen.getValor()+getCen1()*mon1cen.getValor();
+        _dinero1=getBilletes500()*bill500.Valor+getBilletes200()*bill200.Valor
+                +getBilletes100()*bill100.Valor+getBilletes50()*bill50.Valor+
+                getBilletes20()*bill20.Valor+getBilletes10()*bill10.Valor
+                +getBilletes5()*bill5.Valor+getMonedas2()*mon2e.Valor+getMonedas1()*mon1e.Valor+
+                getCen50()*mon50cen.Valor+getCen20()*mon20cen.Valor
+                +getCen10()*mon10cen.Valor+getCen5()*mon5cen.Valor+
+                getCen2()*mon2cen.Valor+getCen1()*mon1cen.Valor;
         
         return _dinero1;
     }
 
     public int getCen1() {
-        int cen1= (int)(getRestoMonedas2cen()/mon1cen.getValor());
-        if(cen1<=getUnidades001()){
+        int cen1= (int)(getRestoMonedas2cen()/mon1cen.Valor);
+        if(cen1<=Unidades001){
             return cen1;
         }else{
-            return getUnidades001();
+            return Unidades001;
         }
     }
 
     public decimal getRestoMonedas2cen() {
-        decimal restoMonedas2cen = (getRestomonedas5cen()% mon2cen.getValor());
+        decimal restoMonedas2cen = (getRestomonedas5cen()% mon2cen.Valor);
        
-        int cen2 = (int)(getRestomonedas5cen()/ mon2cen.getValor());
-        if(cen2<=getUnidades002()){
+        int cen2 = (int)(getRestomonedas5cen()/ mon2cen.Valor);
+        if(cen2<=Unidades002){
             return restoMonedas2cen;
         }else{
-            return restoMonedas2cen+(cen2-getUnidades002())*mon2cen.getValor();
+            return restoMonedas2cen+(cen2-Unidades002)*mon2cen.Valor;
             
         }
     }
 
     public int getCen2() {
-        int cen2 = (int)(getRestomonedas5cen()/ mon2cen.getValor());
-        if(cen2<=getUnidades002()){
+        int cen2 = (int)(getRestomonedas5cen()/ mon2cen.Valor);
+        if(cen2<=Unidades002){
             return cen2;
         }else{
-            return getUnidades002();
+            return Unidades002;
         }
     }
 
     public decimal getRestomonedas5cen() {
-        decimal restoMonedas5cen = (getRestoMonedas10cen()% mon5cen.getValor());
+        decimal restoMonedas5cen = (getRestoMonedas10cen()% mon5cen.Valor);
         
-        int cen5 = (int)(getRestoMonedas10cen()/ mon5cen.getValor());
-        if(cen5<=getUnidades005()){
+        int cen5 = (int)(getRestoMonedas10cen()/ mon5cen.Valor);
+        if(cen5<=Unidades005){
             return restoMonedas5cen;
         }else{
-            return restoMonedas5cen+(cen5-getUnidades005())*mon5cen.getValor();
+            return restoMonedas5cen+(cen5-Unidades005)*mon5cen.Valor;
             
         }
     }
 
     public int getCen5() {
-        int cen5 = (int)(getRestoMonedas10cen()/ mon5cen.getValor());
-        if(cen5<=getUnidades005()){
+        int cen5 = (int)(getRestoMonedas10cen()/ mon5cen.Valor);
+        if(cen5<=Unidades005){
             return cen5;
         }else{
-            return getUnidades005();
+            return Unidades005;
         }
     }
 
     public decimal getRestoMonedas10cen() {
-        decimal restomonedas10cen = (getRestoMonedas20cen()% mon10cen.getValor());
+        decimal restomonedas10cen = (getRestoMonedas20cen()% mon10cen.Valor);
         
-        int cen10 = (int)(getRestoMonedas20cen()/ mon10cen.getValor());
-        if(cen10<=getUnidades01()){
+        int cen10 = (int)(getRestoMonedas20cen()/ mon10cen.Valor);
+        if(cen10<=Unidades01){
             return restomonedas10cen;
         }else{
-            return restomonedas10cen+(cen10-getUnidades01())*mon10cen.getValor();
+            return restomonedas10cen+(cen10-Unidades01)*mon10cen.Valor;
             
         }
     }
 
     public int getCen10() {
-        int cen10 = (int)(getRestoMonedas20cen()/ mon10cen.getValor());
-        if(cen10<=getUnidades01()){
+        int cen10 = (int)(getRestoMonedas20cen()/ mon10cen.Valor);
+        if(cen10<=Unidades01){
             return cen10;
         }else{
-            return getUnidades01();
+            return Unidades01;
         }
     }
 
     public decimal getRestoMonedas20cen() {
-        decimal restomonedas20cen = (getRestoMonedas50cen()% mon20cen.getValor());
+        decimal restomonedas20cen = (getRestoMonedas50cen()% mon20cen.Valor);
         
-        int cen20 = (int)(getRestoMonedas50cen()/ mon20cen.getValor());
-        if(cen20<=getUnidades02()){
+        int cen20 = (int)(getRestoMonedas50cen()/ mon20cen.Valor);
+        if(cen20<=Unidades02){
             return restomonedas20cen;
         }else{
-            return restomonedas20cen+(cen20-getUnidades02())*mon20cen.getValor();
+            return restomonedas20cen+(cen20-Unidades02)*mon20cen.Valor;
             
         }
     }
 
     public int getCen20() {
-        int cen20 = (int)(getRestoMonedas50cen()/ mon20cen.getValor());
-        if(cen20<=getUnidades02()){
+        int cen20 = (int)(getRestoMonedas50cen()/ mon20cen.Valor);
+        if(cen20<=Unidades02){
             return cen20;
         }else{
-            return getUnidades02();
+            return Unidades02;
         }
     }
 
     public decimal getRestoMonedas50cen() {
-        decimal restoMonedas50cen= getRestomonedas1e()% mon50cen.getValor();
+        decimal restoMonedas50cen= getRestomonedas1e()% mon50cen.Valor;
         
-        int cen50 =(int) (getRestomonedas1e()/ mon50cen.getValor());
-        if(cen50<=getUnidades05()){
+        int cen50 =(int) (getRestomonedas1e()/ mon50cen.Valor);
+        if(cen50<=Unidades05){
             return restoMonedas50cen;
         }else{
-           return restoMonedas50cen+(cen50-getUnidades05())*mon50cen.getValor();
+           return restoMonedas50cen+(cen50-Unidades05)*mon50cen.Valor;
             
         }
     }
 
     public int getCen50() {
-        int cen50 =(int) (getRestomonedas1e()/ mon50cen.getValor());
-        if(cen50<=getUnidades05()){
+        int cen50 =(int) (getRestomonedas1e()/ mon50cen.Valor);
+        if(cen50<=Unidades05){
             return cen50;
         }else{
-            return getUnidades05();
+            return Unidades05;
         }
     }
     public decimal getRestomonedas1e(){
-        decimal restoMonedas1e= getRestoMonedas2e()% mon1e.getValor();
+        decimal restoMonedas1e= getRestoMonedas2e()% mon1e.Valor;
         int monedas1= (int) getRestoMonedas2e();
-        if(monedas1<=getUnidades1()){
+        if(monedas1<=Unidades1){
             return restoMonedas1e;
         }else{
-            return restoMonedas1e+(monedas1-getUnidades1())*mon1e.getValor();
+            return restoMonedas1e+(monedas1-Unidades1)*mon1e.Valor;
         }
     }
 
     public int getMonedas1() {
         int monedas1= (int) getRestoMonedas2e();
-        if(monedas1<=getUnidades1()){
+        if(monedas1<=Unidades1){
             return monedas1;
         }else{
-            return getUnidades1();
+            return Unidades1;
         }    }
 
     public decimal getRestoMonedas2e() {
-        decimal restoMonedas2e= getRestoBilletes5() % mon2e.getValor();
-        int monedas2 = (int)(getRestoBilletes5() / mon2e.getValor());
-        if(monedas2<=getUnidades2()){
+        decimal restoMonedas2e= getRestoBilletes5() % mon2e.Valor;
+        int monedas2 = (int)(getRestoBilletes5() / mon2e.Valor);
+        if(monedas2<=Unidades2){
             return restoMonedas2e;
         }else{
-            return restoMonedas2e+(monedas2-getUnidades2())*mon2e.getValor();
+            return restoMonedas2e+(monedas2-Unidades2)*mon2e.Valor;
         }
     }
 
     public int getMonedas2() {
-        int monedas2 = (int)(getRestoBilletes5() / mon2e.getValor());
-        if(monedas2<=getUnidades2()){
+        int monedas2 = (int)(getRestoBilletes5() / mon2e.Valor);
+        if(monedas2<=Unidades2){
             return monedas2;
         }else{
-            return getUnidades2();
+            return Unidades2;
         }
     }
 
     public decimal getRestoBilletes5() {
-        decimal restoBilletes5= getRestobilletes10() %bill5.getValor();
-        int billetes5 = (int)(getRestobilletes10() / bill5.getValor());
-        if(billetes5<=getUnidades5()){
+        decimal restoBilletes5= getRestobilletes10() %bill5.Valor;
+        int billetes5 = (int)(getRestobilletes10() / bill5.Valor);
+        if(billetes5<=Unidades5){
             return restoBilletes5;
         }else{
-            return restoBilletes5+(billetes5-getUnidades5())*bill5.getValor();
+            return restoBilletes5+(billetes5-Unidades5)*bill5.Valor;
         }
     }
 
     public int getBilletes5() {
-        int billetes5 = (int)(getRestobilletes10() / bill5.getValor());
-        if(billetes5<=getUnidades5()){
+        int billetes5 = (int)(getRestobilletes10() / bill5.Valor);
+        if(billetes5<=Unidades5){
             return billetes5;
         }else{
-            return getUnidades5();
+            return Unidades5;
         }
     }
 
     public decimal getRestobilletes10() {
-        decimal restoBilletes10= getRestoBilletes20() %bill10.getValor();
-        int billetes10 = (int)(getRestoBilletes20() / bill10.getValor());
-        if(billetes10<=getUnidades10()){
+        decimal restoBilletes10= getRestoBilletes20() %bill10.Valor;
+        int billetes10 = (int)(getRestoBilletes20() / bill10.Valor);
+        if(billetes10<=Unidades10){
             return restoBilletes10;
         }else{
-            return restoBilletes10+(billetes10-getUnidades10())*bill10.getValor();
+            return restoBilletes10+(billetes10-Unidades10)*bill10.Valor;
         }
     }
 
     public int getBilletes10() {
-        int billetes10 = (int)(getRestoBilletes20() / bill10.getValor());
-        if(billetes10<=getUnidades10()){
+        int billetes10 = (int)(getRestoBilletes20() / bill10.Valor);
+        if(billetes10<=Unidades10){
             return billetes10;
         }else{
-            return getUnidades10();
+            return Unidades10;
         }
     }
 
     public decimal getRestoBilletes20() {
-        decimal restoBillete20= getRestoBilletes50() %bill20.getValor();
-        int billetes20 = (int)(getRestoBilletes50() / bill20.getValor());
-        if(billetes20<=getUnidades20()){
+        decimal restoBillete20= getRestoBilletes50() %bill20.Valor;
+        int billetes20 = (int)(getRestoBilletes50() / bill20.Valor);
+        if(billetes20<=Unidades20){
             return restoBillete20;
         }else{
-            return restoBillete20+(billetes20-getUnidades20())*bill20.getValor();
+            return restoBillete20+(billetes20-Unidades20)*bill20.Valor;
         }
     }
 
     public int getBilletes20() {
-        int billetes20 = (int)(getRestoBilletes50() / bill20.getValor());
-        if(billetes20<=getUnidades20()){
+        int billetes20 = (int)(getRestoBilletes50() / bill20.Valor);
+        if(billetes20<=Unidades20){
             return billetes20;
         }else{
-            return getUnidades20();
+            return Unidades20;
         }
     }
 
     public decimal getRestoBilletes50() {
-        decimal restobilletes50= getRestoBilletes100() %bill50.getValor();
-        int billetes50 = (int)(getRestoBilletes100() / bill50.getValor());
-        if(billetes50<=getUnidades50()){
+        decimal restobilletes50= getRestoBilletes100() %bill50.Valor;
+        int billetes50 = (int)(getRestoBilletes100() / bill50.Valor);
+        if(billetes50<=Unidades50){
             return restobilletes50;
         }else{
-            return restobilletes50+(billetes50-getUnidades50())*bill50.getValor();
+            return restobilletes50+(billetes50-Unidades50)*bill50.Valor;
         }
     }
 
     public int getBilletes50() {
-        int billetes50 = (int)(getRestoBilletes100() / bill50.getValor());
-        if(billetes50<=getUnidades50()){
+        int billetes50 = (int)(getRestoBilletes100() / bill50.Valor);
+        if(billetes50<=Unidades50){
             return billetes50;
         }else{
-            return getUnidades50();
+            return Unidades50;
         }
     }
 
     public  decimal getRestoBilletes100() {
-        decimal restoBilletes100= getRestoBilletes200() %bill100.getValor();
-        int billetes100 = (int)(getRestoBilletes200() / bill100.getValor());
-        if(billetes100<=getUnidades100()){
+        decimal restoBilletes100= getRestoBilletes200() %bill100.Valor;
+        int billetes100 = (int)(getRestoBilletes200() / bill100.Valor);
+        if(billetes100<=Unidades100){
             return restoBilletes100;
         }else{
-            return restoBilletes100+(billetes100-getUnidades100())*bill100.getValor();
+            return restoBilletes100+(billetes100-Unidades100)*bill100.Valor;
         }
     }
 
     public int getBilletes100( ) {
-        int billetes100 = (int)(getRestoBilletes200() / bill100.getValor());
-        if(billetes100<=getUnidades100()){
+        int billetes100 = (int)(getRestoBilletes200() / bill100.Valor);
+        if(billetes100<=Unidades100){
             return billetes100;
         }else{
-            return getUnidades100();
+            return Unidades100;
         }
 
     }
 
     public  decimal getRestoBilletes200() {
-        decimal restoBilletes200= getRestoBilletes500() %bill200.getValor();
-        int billetes200 = (int) (getRestoBilletes500() / bill200.getValor());
-        if(billetes200<=getUnidades200()){
+        decimal restoBilletes200= getRestoBilletes500() %bill200.Valor;
+        int billetes200 = (int) (getRestoBilletes500() / bill200.Valor);
+        if(billetes200<=Unidades200){
             return restoBilletes200;
         }else{
-            return restoBilletes200+(billetes200-getUnidades200())*bill200.getValor();
+            return restoBilletes200+(billetes200-Unidades200)*bill200.Valor;
         }
 
     }
 
     public int getBilletes200() {
 
-        int billetes200 = (int) (getRestoBilletes500() / bill200.getValor());
-        if(billetes200<=getUnidades200()){
+        int billetes200 = (int) (getRestoBilletes500() / bill200.Valor);
+        if(billetes200<=Unidades200){
             return billetes200;
         }else{
-            return getUnidades200();
+            return Unidades200;
         }
     }
 
     public  decimal getRestoBilletes500() {
 
-        decimal restoBilletes500= _dineroasacar.getDinero() %bill500.getValor();
-        int billetes500 = (int)(_dineroasacar.getDinero() / bill500.getValor());
-        if(billetes500<=getUnidades500()){
+        decimal restoBilletes500= _dineroasacar.getDinero() %bill500.Valor;
+        int billetes500 = (int)(_dineroasacar.getDinero() / bill500.Valor);
+        if(billetes500<=Unidades500){
             return restoBilletes500;
         }else{
-            return restoBilletes500+(billetes500-getUnidades500())*bill500.getValor();
+            return restoBilletes500+(billetes500-Unidades500)*bill500.Valor;
         }
 
     }
 
     public int getBilletes500() {
 
-        int billetes500 = (int)(_dineroasacar.getDinero() / bill500.getValor());
-        if(billetes500<=getUnidades500()){
+        int billetes500 = (int)(_dineroasacar.getDinero() / bill500.Valor);
+        if(billetes500<=Unidades500){
             return billetes500;
         }else{
-            return getUnidades500();
+            return Unidades500;
         }
 
+    }
+    public void actualizaCajero(){
+        if(_dineroasacar.getDinero()<=_dinero&&_dineroasacar.getDinero()==_dinero1){
+        Unidades500=Unidades500-getBilletes500();
+        Unidades200=Unidades200-getBilletes200();
+        Unidades100=Unidades100-getBilletes100();
+        Unidades50=Unidades50-getBilletes50();
+        Unidades20=Unidades20-getBilletes20();
+        Unidades10=Unidades10-getBilletes10();
+        Unidades5=Unidades5-getBilletes5();
+        Unidades2=Unidades2-getMonedas2();
+        Unidades1=Unidades1-getMonedas1();
+        Unidades05=Unidades05-getCen50();
+        Unidades02=Unidades02-getCen20();
+        Unidades01=Unidades01-getCen10();
+        Unidades005=Unidades005-getCen5();
+        Unidades002=Unidades002-getCen2();
+        Unidades001=Unidades001-getCen1();
+        }
     }
 
 
@@ -503,21 +414,23 @@ namespace _net{
             return "El cajero no dispone de los cambios disponibles para retirar su dinero, por favor acuda al más cercano\n";
         }
         return "Dinero: total " +_dineroasacar.getDinero()+ " euros \n"+
-                "Billetes de " +bill500.getValor()+" : "  +getBilletes500()+"\n"+
-                "Billetes de "+bill200.getValor()+" : " +getBilletes200()+"\n"+
-                "Billetes de "+bill100.getValor()+" : " +getBilletes100()+"\n"+
-                "Billetes de "+bill50.getValor()+" : " +getBilletes50()+"\n"+
-                "Billetes de "+bill20.getValor()+" : " +getBilletes20()+"\n"+
-                "Billetes de "+bill10.getValor()+" : " +getBilletes10()+"\n"+
-                "Billetes de "+bill5.getValor()+" : " +getBilletes5()+"\n"+
-                "Monedas de "+ mon2e.getValor()+" euros "+" : " +getMonedas2()+"\n"+
-                "Monedas de "+ mon1e.getValor()+" euros "+" : " +getMonedas1()+"\n"+
-                "Monedas de "+ mon50cen.getValor()+" euros "+" : " +getCen50()+"\n"+
-                "Monedas de "+ mon20cen.getValor()+" euros "+" : " +getCen20()+"\n"+
-                "Monedas de "+ mon10cen.getValor()+" euros "+" : " +getCen10()+"\n"+
-                "Monedas de "+ mon5cen.getValor()+" euros "+" : " +getCen5()+"\n"+
-                "Monedas de "+ mon2cen.getValor()+" euros "+" : " +getCen2()+"\n"+
-                "Monedas de "+ mon1cen.getValor()+" euros "+" : " +getCen1()+"\n";
+                "Billetes de " +bill500.Valor+" : "  +getBilletes500()+"\n"+
+                "Billetes de "+bill200.Valor+" : " +getBilletes200()+"\n"+
+                "Billetes de "+bill100.Valor+" : " +getBilletes100()+"\n"+
+                "Billetes de "+bill50.Valor+" : " +getBilletes50()+"\n"+
+                "Billetes de "+bill20.Valor+" : " +getBilletes20()+"\n"+
+                "Billetes de "+bill10.Valor+" : " +getBilletes10()+"\n"+
+                "Billetes de "+bill5.Valor+" : " +getBilletes5()+"\n"+
+                "Monedas de "+ mon2e.Valor+" euros "+" : " +getMonedas2()+"\n"+
+                "Monedas de "+ mon1e.Valor+" euros "+" : " +getMonedas1()+"\n"+
+                "Monedas de "+ mon50cen.Valor+" euros "+" : " +getCen50()+"\n"+
+                "Monedas de "+ mon20cen.Valor+" euros "+" : " +getCen20()+"\n"+
+                "Monedas de "+ mon10cen.Valor+" euros "+" : " +getCen10()+"\n"+
+                "Monedas de "+ mon5cen.Valor+" euros "+" : " +getCen5()+"\n"+
+                "Monedas de "+ mon2cen.Valor+" euros "+" : " +getCen2()+"\n"+
+                "Monedas de "+ mon1cen.Valor+" euros "+" : " +getCen1()+"\n";
+        
+        
     }
 }
 

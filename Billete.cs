@@ -1,18 +1,16 @@
 namespace _net
 {
 public class Billete {
-    int valor;
+    
 
     public Billete(int valor) {
-        this.valor = valor;
+        Valor = valor;
+    }
+    
+    public int Valor { get; set; }
+    
     }
 
-    public int getValor() {
-        return valor;
-    }
+    
+}
 
-    public void setValor(int valor) {
-        this.valor = valor;
-    }
-}
-}

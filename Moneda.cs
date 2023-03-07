@@ -1,19 +1,18 @@
 namespace _net
 {
 public class Moneda {
-     decimal valor;
+     private decimal valor;
 
     public Moneda(decimal valor) {
         this.valor = valor;
     }
-
-    public decimal getValor() {
-
-        return valor;
-    }
-
-    public void setValor(decimal valor) {
-        this.valor = valor;
+    public decimal Valor{
+        get{
+            return valor;
+        }
+        set{
+            this.valor=valor;
+        }
     }
 
 }
