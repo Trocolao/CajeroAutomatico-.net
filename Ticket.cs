@@ -1,6 +1,6 @@
 namespace _net{
     public class Ticket {
-        public int Devuelve500 { get; set; }
+    public int Devuelve500 { get; set; }
     public int Devuelve200 { get; set; }
     public int Devuelve100 { get; set; }
     public int Devuelve50 { get; set; }
@@ -69,7 +69,7 @@ namespace _net{
             
         }
         public void actualizarDinero(Cajero cajero1){
-            cajero1.Unidades500=cajero1.Unidades500-cajero1.getBilletes500();
+                cajero1.Unidades500=cajero1.Unidades500-cajero1.getBilletes500();
                 cajero1.Unidades200=cajero1.Unidades200-cajero1.getBilletes200();
                 cajero1.Unidades100=cajero1.Unidades100-cajero1.getBilletes100();
                 cajero1.Unidades50=cajero1.Unidades50-cajero1.getBilletes50();

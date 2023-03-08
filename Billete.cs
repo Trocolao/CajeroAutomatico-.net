@@ -1,16 +1,15 @@
 namespace _net
 {
-public class Billete {
-    
+    public class Billete
+    {
+        public Billete(int valor)
+        {
+            Valor = valor;
+        }
 
-    public Billete(int valor) {
-        Valor = valor;
-    }
-    
-    public int Valor { get; set; }
-    
+        public int Valor { get; set; }
+
     }
 
-    
 }
 
