@@ -34,8 +34,8 @@ namespace _net
 
     private static void SacarDinero(Dinero dinero1, Cajero cajero1) {
         cajero1.setDineroaSacar(dinero1);
-        Console.WriteLine(cajero1.tostr());
-        cajero1.actualizaCajero();
+        cajero1.devolverDinero();
+        
     }
         }
     }
